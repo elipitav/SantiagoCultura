@@ -1,0 +1,86 @@
+/*.menuPrincipal{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuPrincipal > li{
+  width: 234px;
+  display: inline-block;
+  background-color: #734E39;
+  text-align: center;
+}
+
+.menuPrincipal > li > a{
+  font-family: Rockwell;
+  text-decoration: none;
+  color: #F2E3D5;
+}
+
+.navegacionPrincipal{
+  position: absolute;
+  top: 220px;
+  left: 243px;
+  width: 955px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #734E39;
+}*/
+
+/*1.0*/
+
+/*.navegacionPrincipal ul{
+  list-style: none;
+  border: black 2px solid;
+}
+
+.menuPrincipal > li{
+  width: 234px;
+  position: relative;
+  display: inline-block;
+}
+
+.menuPrincipal > li > a{
+  font-family: Rockwell;
+  font-size: 30;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 20px;
+  color: #F2E3D5;
+  display: block;
+}
+
+.menuPrincipal li a:hover{
+  color: #BFA393;
+  transition: all .3s;
+}
+
+/*Submenu*/
+
+/*.submenuPrincipal{
+  position: absolute;
+  background-color: #BFA393;
+  width: 100%;
+  border: black 1px solid;
+  list-style: none;
+  display: none;
+}
+
+.submenuPrincipal li a{
+  display: block;
+  padding: 15px;
+  color: #000000;
+  font-size: 24;
+  border: black 1px solid;
+  text-decoration: none;
+}
+
+.submenuPrincipal li a:hover{
+  color: #495F73;
+  transition: all .3s;
+}
+
+.menuPrincipal li:hover .submenuPrincipal{
+  display:block;
+}*/
