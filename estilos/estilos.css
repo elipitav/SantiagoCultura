@@ -6,30 +6,129 @@
   box-sizing: border-box;
 }
 
-.body{
+.contenido{
   /*width: 100vw;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 218px 77px 600px;*/
-  background: #F2E3D5;
   font-family: Arial, Verdana, Geneva, sans-serif;
+  background-color: #F2E3D5;
 }
-.menuPrincipal{
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
-  border: black 1px solid;
 
+.navegacionPrincipal{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
+.menuPrincipal{
+  grid-column: 3/11;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #734E39;
+}
+
+.menuPrincipal > li{
+  position: relative;
+  display: inline-block;
+  border: black 1px solid;
+}
+
+.menuPrincipal > li > a{
+  font-family: Rockwell;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 20px;
+  color: #F2E3D5;
+  display: block;
+}
+
+.menuPrincipal li a:hover{
+  color: #BFA393;
+  transition: all .3s;
+}
+
+/*Submenu*/
+
+.submenuPrincipal{
+  position: absolute;
+  background-color: #BFA393;
+  width: 100%;
+  border: black 1px solid;
+  list-style: none;
+  display: none;
+}
+
+.submenuPrincipal li a{
+  display: block;
+  padding: 10px;
+  color: #000000;
+  font-size: 18px;
+  border: black 1px solid;
+  text-decoration: none;
+}
+
+.submenuPrincipal li a:hover{
+  color: #495F73;
+  transition: all .3s;
+}
+
+.menuPrincipal li:hover .submenuPrincipal{
+  display:block;
+}
+
+/*.menuPrincipal > li{
+  border: black 1px solid;
+  text-align: center;
+  background-color: #734E39;
+}
+
+.menuPrincipal > li > a{
+  text-decoration: none;
+  font-family: Rockwell;
+  font-size: 24px;
+}*/
+
+/*.menuPrincipal > li{
+  text-align: center;
+  padding: 10px 0px;
+  border: black 1px solid;
+  background-color: #734E39;
+}
+
+.menuPrincipal > li > a{
+  font-family: Rockwell;
+  font-size: 40;
+  text-decoration: none;
+  text-align: center;
+  color: #F2E3D5;
+  display: block;
+}*/
+
+/*.menuPrincipal{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: black 1px solid;
+}
+
 .menuPrincipal > li {
   text-align: center;
   padding: 15px 20px;
+  border: black 1px solid;
 }
+
 .menuPrincipal > li > a {
-    text-decoration: none;
+  font-size: 30;
+  color: #F2E3D5;
+  font-family: Rockwell;
+  text-decoration: none;
 }
+
 .menuInformacion {
   grid-column: 3/5;
 }
+
 .menuQueVer {
   grid-column: 5/7;
 }
@@ -37,9 +136,11 @@
 .menuQueHacer {
   grid-column: 7/9;
 }
+
 .menuGaleria {
   grid-column: 9/11;
-}
+}*/
+
 /*.portada{
   width: 100vw;
   height: 600px;
@@ -49,5 +150,5 @@
 
 /*.menuPrincipal{
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }*/

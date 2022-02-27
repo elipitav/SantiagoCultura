@@ -5,17 +5,19 @@
     <title> Principal </title>
     <link rel="stylesheet" href="estilos/principal.css"/>
   </head>
-  <body>
+  <body class="contenido">
+
     <header>
       <div class="cabecera">
         <figure> <img src="imagenes/principal/logo.jpg" width=122px height=177px> </figure>
         <h1> SantiagoCultura </h1>
       </div>
     </header>
+
     <nav class="navegacionPrincipal">
       <ul class="menuPrincipal">
-        <li class="menuInformacion"> <a href="#"> Información </a>
-          <!-- <ul class="submenuPrincipal" CACA>
+        <li> <a href="#"> Información </a>
+          <ul class="submenuPrincipal">
             <li> <a href="paginas/historia.html"> Historia </a> </li>
             <li> <a href="paginas/comoLlegar.html"> Cómo llegar </a> </li>
             <li> <a href="paginas/informacionGeneral.html"> Información general </a> </li>
@@ -23,17 +25,17 @@
             <li> <a href="paginas/contacto.html"> Contacto </a> </li>
             <li> <a href="paginas/faqs.html"> FAQs </a> </li>
             <li> <a href="paginas/quejasSugerencias.html"> Quejas y sugerencias </a> </li>
-          </ul> -->
+          </ul>
         </li>
-        <li class="menuQueVer"> <a href="#"> Qué ver </a>
-          <!-- <ul class="submenuPrincipal">
+        <li> <a href="#"> Qué ver </a>
+          <ul class="submenuPrincipal">
             <li> <a href="paginas/monumentos.html"> Monumentos </a> </li>
             <li> <a href="paginas/museosExposiciones.html"> Museos y exposiciones </a> </li>
             <li> <a href="paginas/parquesJardines.html"> Parques y jardines </a> </li>
-          </ul> -->
+          </ul>
         </li>
-        <li class="menuQueHacer"> <a href="#"> Qué hacer </a>
-          <!-- <ul class="submenuPrincipal">
+        <li> <a href="#"> Qué hacer </a>
+          <ul class="submenuPrincipal">
             <li> <a href="paginas/tours.html"> Tours </a> </li>
             <li> <a href="paginas/gastronomia.html"> Gastronomía </a> </li>
             <li> <a href="paginas/alojamiento.html"> Alojamiento </a> </li>
@@ -41,109 +43,151 @@
             <li> <a href="paginas/ocioNocturno.html"> Ocio nocturno </a> </li>
             <li> <a href="paginas/agendaCultural.html"> Agenda cultural </a> </li>
             <li> <a href="paginas/caminoSantiago.html"> Camino de Santiago </a> </li>
-          </ul> -->
+          </ul>
         </li>
-        <li class="menuGaleria"> <a href="#"> Galería </a>
-          <!-- <ul class="submenuPrincipal">
+        <li> <a href="#"> Galería </a>
+          <ul class="submenuPrincipal">
             <li> <a href="paginas/galeria.html"> Galería de imágenes </a> </li>
-          </ul> -->
+          </ul>
         </li>
       </ul>
     </nav>
+
     <div class="portada">
-      <figure> <img src="imagenes/principal/portada.jpg"> </figure>
+      <figure> <img src="imagenes/principal/portada.jpg" width="100%" height="700px"> </figure>
     </div>
-    <section>
+
+    <section class="submenuSecundario">
       <h2> Información </h2>
-      <ul>
-        <li>
-          <h3> <a href="paginas/historia.html"> Historia </a> </h3>
-          <p> <img src="imagenes/portadas/historia.jpg"> </p>
+      <ul class="contenedor contenedorInformacion">
+          <li class="item1">
+            <a href="paginas/historia.html">
+              <figure> <img src="imagenes/portadas/historia.jpg" width="100%" height="142px"> </figure>
+              <p> Historia </p>
+            </a>
+          </li>
+        <li class="item2">
+          <a href="paginas/comoLlegar.html">
+            <figure> <img src="imagenes/portadas/comoLlegar.jpg" width="100%" height="142px"> </figure>
+            <p> Cómo llegar </p>
+          </a>
         </li>
-        <li>
-          <h3> <a href="paginas/comoLlegar.html"> Cómo llegar </a> </h3>
-          <p> <img src="imagenes/portadas/comoLlegar.jpg"> </p>
+        <li class="item3">
+          <a href="paginas/informacionGeneral.html">
+            <figure> <img src="imagenes/portadas/infoGeneral.jpg" width="100%" height="142px"> </figure>
+            <p> Información general </p>
+          </a>
         </li>
-        <li>
-          <h3> <a href="paginas/informacionGeneral.html"> Información general </a> </h3>
-          <p> <img src="imagenes/portadas/infoGeneral.jpg"> </p>
+        <li class="item4">
+          <a href="paginas/servicios.html">
+            <figure> <img src="imagenes/portadas/servicios.jpg" width="100%" height="142px"> </figure>
+            <p> Servicios </p>
+          </a>
         </li>
-        <li>
-          <h3> <a href="paginas/servicios.html"> Servicios </a> </h3>
-          <p> <img src="imagenes/portadas/servicios.jpg"> </p>
+        <li class="item5">
+          <a href="paginas/contacto.html">
+            <figure> <img src="imagenes/portadas/contacto.jpg" width="100%" height="142px"> </figure>
+            <p> Contacto </p>
+          </a>
         </li>
-        <li>
-          <h3> <a href="paginas/contacto.html"> Contacto </a> </h3>
-          <p> <img src="imagenes/portadas/contacto.jpg"> </p>
+        <li class="item6">
+          <a href="paginas/faqs.html">
+            <figure> <img src="imagenes/portadas/faqs.jpg" width="100%" height="142px"> </figure>
+            <p> FAQs </p>
+          </a>
         </li>
-        <li>
-          <h3> <a href="paginas/faqs.html"> FAQs </a> </h3>
-          <p> <img src="imagenes/portadas/faqs.jpg"> </p>
-        </li>
-        <li>
-          <h3> <a href="paginas/quejasSugerencias.html"> Quejas y sugerencias </a> </h3>
-          <p> <img src="imagenes/portadas/quejas.jpg"> </p>
+        <li class="item7">
+          <a href="paginas/quejasSugerencias.html">
+            <figure> <img src="imagenes/portadas/quejas.jpg" width="100%" height="142px"> </figure>
+            <p> Quejas y sugerencias </p>
+          </a>
         </li>
       </ul>
     </section>
-    <section>
+
+    <section class="submenuSecundario">
       <h2> Qué ver </h2>
-      <ul>
-        <li>
-          <h3> <a href="paginas/monumentos.html"> Monumentos </a> </h3>
-          <p> <img src="imagenes/portadas/monumentos.jpg"> </p>
+      <ul class="contenedor contenedorQueVer">
+        <li class="item1">
+          <a href="paginas/monumentos.html">
+            <figure> <img src="imagenes/portadas/monumentos.jpg" width="100%" height="142px"> </figure>
+            <p> Monumentos </p>
+          </a>
         </li>
-        <li>
-          <h3> <a href="paginas/museosExposiciones.html"> Museos y exposiciones </a> </h3>
-          <p> <img src="imagenes/portadas/museos.jpg"> </p>
+        <li class="item2">
+          <a href="paginas/museosExposiciones.html">
+            <figure> <img src="imagenes/portadas/museos.jpg" width="100%" height="142px"> </figure>
+            <p> Museos y exposiciones </p>
+          </a>
         </li>
-        <li>
-          <h3> <a href="paginas/parquesJardines.html"> Parques y jardines </a> </h3>
-          <p> <img src="imagenes/portadas/parques.jpg"> </p>
+        <li class="item3">
+          <a href="paginas/parquesJardines.html">
+            <figure> <img src="imagenes/portadas/parques.jpg" width="100%" height="142px"> </figure>
+            <p> Parques y jardines </p>
+          </a>
         </li>
       </ul>
     </section>
-    <section>
+
+    <section class="submenuSecundario">
       <h2> Qué hacer </h2>
-      <ul>
-        <li>
-          <h3> <a href="paginas/tours.html"> Tours </a> </h3>
-          <p> <img src="imagenes/portadas/tours.jpg"> </p>
+      <ul class="contenedor">
+        <li class="item1">
+          <a href="paginas/tours.html">
+            <figure> <img src="imagenes/portadas/tours.jpg" width="100%" height="142px"> </figure>
+            <p> Tours </p>
+          </a>
         </li>
-        <li>
-          <h3> <a href="paginas/gastronomia.html"> Gastronomía </a> </h3>
-          <p> <img src="imagenes/portadas/gastronomia.jpg"> </p>
+        <li class="item2">
+          <a href="paginas/gastronomia.html">
+            <figure> <img src="imagenes/portadas/gastronomia.jpg" width="100%" height="142px"> </figure>
+            <p> Gastronomía </p>
+          </a>
         </li>
-        <li>
-          <h3> <a href="paginas/alojamiento.html"> Alojamiento </a> </h3>
-          <p> <img src="imagenes/portadas/alojamiento.jpg"> </p>
+        <li class="item3">
+          <a href="paginas/alojamiento.html">
+            <figure> <img src="imagenes/portadas/alojamiento.jpg" width="100%" height="142px"> </figure>
+            <p> Alojamiento </p>
+          </a>
         </li>
-        <li>
-          <h3> <a href="paginas/comercio.html"> Comercio </a> </h3>
-          <p> <img src="imagenes/portadas/comercio.jpg"> </p>
+        <li class="item4">
+          <a href="paginas/comercio.html">
+            <figure> <img src="imagenes/portadas/comercio.jpg" width="100%" height="142px"> </figure>
+            <p> Comercio </p>
+          </a>
         </li>
-        <li>
-          <h3> <a href="paginas/ocioNocturno.html"> Ocio nocturno </a> </h3>
-          <p> <img src="imagenes/portadas/ocioNocturno.jpg"> </p>
+        <li href="paginas/ocioNocturno.html" class="item5">
+          <a href="paginas/ocioNocturno.html">
+            <figure> <img src="imagenes/portadas/ocioNocturno.jpg" width="100%" height="142px"> </figure>
+            <p> Ocio nocturno </p>
+          </a>
         </li>
-        <li>
-          <h3> <a href="paginas/agendaCultural.html"> Agenda cultural </a> </h3>
-          <p> <img src="imagenes/portadas/agendaCultural.jpg"> </p>
+        <li class="item6">
+          <a href="paginas/agendaCultural.html">
+            <figure> <img src="imagenes/portadas/agendaCultural.jpg" width="100%" height="142px"> </figure>
+            <p> Agenda cultural </p>
+          </a>
         </li>
-        <li>
-          <h3> <a href="paginas/caminoSantiago.html"> Camino de Santiago </a> </h3>
-          <p> <img src="imagenes/portadas/camino.jpg"> </p>
+        <li class="item7">
+          <a href="paginas/caminoSantiago.html">
+            <figure> <img src="imagenes/portadas/camino.jpg" width="100%" height="142px"> </figure>
+            <p> Camino de Santiago </p>
+          </a>
         </li>
       </ul>
     </section>
-    <section>
+
+    <section class="submenuSecundario">
       <h2> Galería </h2>
-      <ul>
-        <li>
-          <h3> <a href="paginas/galeria.html"> Galería de imágenes </a> </h3>
-          <p> <img src="imagenes/portadas/galeria.jpg"> </p>
+      <ul class="contenedor contenedorGaleria">
+        <li class="item1">
+          <a href="paginas/galeria.html">
+            <figure> <img src="imagenes/portadas/galeria.jpg" width="100%" height="142px"> </figure>
+            <p> Galería de imágenes </p>
+          </a>
         </li>
       </ul>
     </section>
+
   </body>
 </html>
