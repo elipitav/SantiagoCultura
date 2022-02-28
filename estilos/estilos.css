@@ -20,6 +20,19 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+.checkbtn{
+    font-size: 40px;
+    color: #495F73;
+    float: right;
+    /*line-height: 80px;*/
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
 .menuPrincipal{
   grid-column: 3/11;
   list-style: none;
@@ -43,6 +56,10 @@
   color: #F2E3D5;
   display: block;
 }
+
+
+
+
 
 .menuPrincipal li a:hover{
   color: #BFA393;
@@ -69,6 +86,8 @@
   text-decoration: none;
 }
 
+
+
 .submenuPrincipal li a:hover{
   color: #495F73;
   transition: all .3s;
@@ -76,6 +95,39 @@
 
 .menuPrincipal li:hover .submenuPrincipal{
   display:block;
+}
+
+/*para tabletas*/
+@media screen and (max-width: 1023px){
+
+  .menuPrincipal > li > a{
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .submenuPrincipal li a{
+    padding: 8px;
+    font-size: 14px;
+  }
+
+}
+
+/*Para móviles*/
+@media screen and (max-width: 767px){
+
+  .navegacionPrincipal{
+    display: block;
+  }
+
+  .menuPrincipal{
+    display: none;
+  }
+
+  .checkbtn{
+        display: block;
+    }
+
+
 }
 
 /*.menuPrincipal > li{
