@@ -1,0 +1,18 @@
+@import "estilos.css";
+
+.menuPrincipal{
+  margin-top: 60px;
+  grid-template-columns: 1fr 4fr 4fr 4fr 4fr;
+  background-color: #734E39;
+}
+.iconoCatedral{
+  background-color: #B89787;
+  padding: 7px;
+  border: black 1px solid;
+}
+.iconoCatedral > a > figure > img{
+  display: block;
+  width: 40px;
+  height: 100%;
+  margin: 0 auto;
+}
