@@ -95,3 +95,25 @@
   opacity: 0.5;
   height: 150px;
 }
+
+.contenidoServicios > section > article{
+  display: inline-block;
+  margin: 50px;
+  margin-bottom: 0px;
+}
+
+.contenidoServicios > section > article > h3{
+  font-size: 30px;
+  margin: 25px;
+  display: list-item;
+  list-style-type: disc;
+}
+
+.contenidoServicios > section > article > figure{
+  margin: 25px;
+}
+
+.mapa > img{
+  display: block;
+  margin: auto; 
+}
