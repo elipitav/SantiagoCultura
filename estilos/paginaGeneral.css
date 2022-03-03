@@ -6,6 +6,7 @@
   background-color: #734E39;
 }
 
+
 .iconoCatedral{
   background-color: #B89787;
   padding: 7px;
@@ -28,6 +29,8 @@ header{
   border: black solid 1px;
   margin: 0px;
   padding: 0px;
+  font-weight: bold;
+  z-index: -1;
 }
 
 header > p{
@@ -62,5 +65,9 @@ main{
   margin: 0px;
   grid-column: 11/13;
   background-color: #BFA393;
+  border: #495F73 4px solid;
+}
+article{
+  grid-column: 3/11;
   border: #495F73 4px solid;
 }
