@@ -6,9 +6,11 @@ section{
   justify-content: center;
   align-items: baseline;
 }
+
 section > figure{
    margin:10px;
 }
+
 button{
   color: #495F73;
   text-align: center;
@@ -20,9 +22,13 @@ button{
   border-radius: 5px;
   font-family: Rockwell;
 }
+
 article > h2 {
   font-size: 20px;
-  margin: 40px;
+  margin: 30px;
+  margin-left: 80px;
+  display: list-item;
+  list-style-type: disc;
 }
 .imagenSecundaria{
   display: none;
