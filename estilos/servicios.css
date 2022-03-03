@@ -1,5 +1,9 @@
 @import "paginaGeneral.css";
 
+.navServicios{
+  margin-bottom: 50px;
+}
+
 .navServicios > ul{
   list-style: none;
   padding: 20px;
@@ -16,6 +20,7 @@
   display: inline-block;
   text-align: center;
   border: #495F73 solid 1px;
+  z-index: -1;
 }
 
 .navServicios > ul > li > a > p{
@@ -62,15 +67,15 @@
 .contenidoServicios{
   margin: 0px;
   grid-column: 3/11;
-  border: #495F73 4px solid;
+  border: #495F73 1px solid;
   padding: 30px 0px;
 }
 
-.contenidoServicios > section{
+.contenidoServicios > article{
   margin-top: 100px;
 }
 
-.contenidoServicios > section > header{
+.contenidoServicios > article > header{
   width: 100%;
   height: 150px;
   position: relative;
@@ -81,7 +86,7 @@
   padding: 0px;
 }
 
-.contenidoServicios > header > p > a{
+.contenidoServicios > article > header > p > a{
   font-size: 70px;
   color: #495F73;
   position: absolute;
@@ -90,30 +95,35 @@
   transform: translate(-50%, -50%);
 }
 
-.contenidoServicios > header > figure > img{
+.contenidoServicios > article > header > figure > img{
   width: 100%;
   opacity: 0.5;
   height: 150px;
 }
 
-.contenidoServicios > section > article{
+.contenidoServicios > article > section{
   display: inline-block;
-  margin: 50px;
-  margin-bottom: 0px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 25px;
 }
 
-.contenidoServicios > section > article > h3{
-  font-size: 30px;
-  margin: 25px;
+.contenidoServicios > article{
+  margin-bottom: 100px;
+}
+
+.contenidoServicios > article > section > h3{
+  font-size: 25px;
+  margin-left: 25px;
   display: list-item;
   list-style-type: disc;
 }
 
-.contenidoServicios > section > article > figure{
+.contenidoServicios > article > section > figure{
   margin: 25px;
 }
 
 .mapa > img{
   display: block;
-  margin: auto; 
+  margin: auto;
 }
