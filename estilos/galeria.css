@@ -1,0 +1,29 @@
+@import "paginaGeneral.css";
+
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+section > figure{
+   margin:10px;
+}
+button{
+  color: #495F73;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  padding: 7px 40px;
+  border: 1px solid #495F73;
+  border-radius: 5px;
+  font-family: Rockwell;
+}
+article > h2 {
+  font-size: 20px;
+  margin: 40px;
+}
+.imagenSecundaria{
+  display: none;
+}
