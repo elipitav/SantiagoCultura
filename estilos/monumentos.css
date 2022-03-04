@@ -1,0 +1,21 @@
+@import "paginaGeneral.css";
+
+article{
+  padding: 80px;
+}
+section{
+  display: flex;
+}
+article > h2{
+  font-size: 18px;
+  padding: 7px;
+  display: list-item;
+  list-style-type: disc;
+}
+section > figure{
+  margin: 10px;
+}
+section > p{
+  margin: 10px;
+  font-size: 14px;
+}
