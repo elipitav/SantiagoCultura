@@ -1,0 +1,7 @@
+@import "paginaGeneral.css";
+article {
+  padding: 80px;
+}
+article > p{
+  padding: 10px 0px;
+}
