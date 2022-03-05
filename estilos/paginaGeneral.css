@@ -7,17 +7,21 @@
   z-index: 1;
 }
 
-.iconoCatedral{
+.inicio{
   background-color: #B89787;
   padding: 7px;
   border: black 1px solid;
 }
 
-.iconoCatedral > a > figure > img{
+.inicio > a > figure > img{
   display: block;
   width: 40px;
   height: 100%;
   margin: 0 auto;
+}
+
+.inicio > a > p{
+  display: none;
 }
 
 header{
@@ -68,8 +72,111 @@ main{
   border-left: #495F73 4px solid;
 }
 
+/*para tabletas*/
+@media screen and (max-width: 1023px){
+
+  .menuPrincipal > li{
+    text-align: center;
+  }
+
+  .menuPrincipal > li > a{
+    font-size: 15px;
+    padding: 20px 15px;
+  }
+
+  .submenuPrincipal > li{
+    text-align: left;
+  }
+
+  .cabecera > h1{
+    padding: 40px;
+    font-size: 50px;
+  }
+
+  .cabecera > figure{
+     width: 90px;
+     height: 132px;
+  }
+
+  .submenuPrincipal li a{
+    padding: 8px;
+    font-size: 14px;
+  }
+
+}
+
 /*para móviles*/
 @media screen and (max-width: 767px){
+
+  .navegacionPrincipal{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menuPrincipal{
+    display: none;
+    width: 100vw;
+    margin:0;
+  }
+
+  .menuPrincipal li:hover .submenuPrincipal{
+    display:none;
+  }
+
+  .menuPrincipal li:target .submenuPrincipal{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .inicio > a{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .inicio > a > figure{
+    display: none;
+  }
+
+  .inicio > a > p{
+    font-family: Rockwell;
+    text-align: center;
+    color: #495F73;
+    display: block;
+  }
+
+  .cabecera > h1{
+    font-size: 40px;
+  }
+
+  .cabecera > figure > img{
+     width: 100px;
+     height: 145px;
+  }
+
+  .checkbtn{
+    display: block;
+  }
+
+  #check:checked ~ .menuPrincipal{
+        display: flex;
+        flex-direction: column;
+  }
+
+  #check:checked ~ .imagenPrincipal{
+        display: none;
+  }
+
+  .imagenPrincipal > img{
+    width: 100%;
+    height: 350px;
+  }
+
+  .submenuPrincipal{
+    z-index: 1;
+  }
+
   .lado1{
     display: none;
   }
@@ -78,13 +185,4 @@ main{
     display: none;
   }
 
-  main{
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-
-article{
-  grid-column: 3/11;
 }

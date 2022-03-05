@@ -106,6 +106,11 @@
 /*para tabletas*/
 @media screen and (max-width: 1023px){
 
+  .menuPrincipal > li > a{
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
   .cabecera > h1{
     padding: 40px;
     font-size: 50px;
@@ -114,6 +119,11 @@
   .cabecera > figure{
      width: 90px;
      height: 132px;
+  }
+
+  .submenuPrincipal li a{
+    padding: 8px;
+    font-size: 14px;
   }
 
   .submenuSecundario > h2{
@@ -172,6 +182,27 @@
 /*para móviles*/
 @media screen and (max-width: 767px){
 
+  .navegacionPrincipal{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menuPrincipal{
+    display: none;
+    width: 100vw;
+    margin:0;
+  }
+
+  .menuPrincipal li:hover .submenuPrincipal{
+    display:none;
+  }
+
+  .menuPrincipal li:target .submenuPrincipal{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
   .cabecera > h1{
     font-size: 40px;
   }
@@ -185,17 +216,22 @@
     display: block;
   }
 
-  #check:checked ~ .navegacionPrincipal{
-        display: block;
-  }
-
   #check:checked ~ .menuPrincipal{
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
   }
 
   #check:checked ~ .imagenPrincipal{
         display: none;
+  }
+
+  .imagenPrincipal > img{
+    width: 100%;
+    height: 350px;
+  }
+
+  .submenuPrincipal{
+    z-index: 1;
   }
 
   .contenedor{

@@ -4,6 +4,7 @@ article{
   margin: 0px;
   border: #495F73 4px solid;
   padding: 30px 100px;
+  grid-column: 3/11;
 }
 
 article > section > h3{

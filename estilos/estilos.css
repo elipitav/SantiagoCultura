@@ -71,7 +71,7 @@
   position: absolute;
   background-color: #BFA393;
   width: 100%;
-  border: black 1px solid;
+  /*border: black 1px solid;*/
   list-style: none;
   display: none;
 }
@@ -97,7 +97,7 @@
 /*para tabletas*/
 @media screen and (max-width: 1023px){
 
-  .menuPrincipal > li > a{
+  /*menuPrincipal > li > a{
     font-size: 16px;
     padding: 10px 15px;
   }
@@ -105,14 +105,14 @@
   .submenuPrincipal li a{
     padding: 8px;
     font-size: 14px;
-  }
+  }*/
 
 }
 
 /*Para móviles*/
 @media screen and (max-width: 767px){
 
-  .menuPrincipal{
+  /*.menuPrincipal{
     grid-column: 1/6;
     display: none;
     width: 50vw;
@@ -139,7 +139,7 @@
 
   .checkbtn{
     display: block;
-  }
+  }*/
 
 }
 

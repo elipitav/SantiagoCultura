@@ -2,6 +2,7 @@
 
 article{
   padding: 60px;
+  grid-column: 3/11;
 }
 
 .contenidoQueVer{
@@ -35,5 +36,12 @@ section > h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px){
+  main{
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -23,6 +23,10 @@ button{
   font-family: Rockwell;
 }
 
+article{
+  grid-column: 3/11;
+}
+
 article > h2 {
   font-size: 20px;
   margin: 30px;
@@ -30,6 +34,7 @@ article > h2 {
   display: list-item;
   list-style-type: disc;
 }
+
 .imagenSecundaria{
   display: none;
 }
