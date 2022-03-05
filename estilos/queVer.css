@@ -1,11 +1,15 @@
 @import "paginaGeneral.css";
 
 article{
-  padding: 80px;
+  padding: 60px;
 }
 
 .contenidoQueVer{
   display: flex;
+}
+
+section{
+  margin-bottom: 30px;
 }
 
 section > h2{
@@ -21,6 +25,15 @@ section > h2{
 
 .contenidoQueVer > p{
   text-align: justify;
-  margin: 10px;
+  margin: 0px;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1023px){
+  .contenidoQueVer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
