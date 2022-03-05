@@ -68,6 +68,23 @@ main{
   border-left: #495F73 4px solid;
 }
 
+/*para móviles*/
+@media screen and (max-width: 767px){
+  .lado1{
+    display: none;
+  }
+
+  .lado2{
+    display: none;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
 article{
   grid-column: 3/11;
 }

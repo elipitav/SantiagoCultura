@@ -85,7 +85,7 @@
   padding: 0px;
 }
 
-.contenidoServicios > article > header > p > a{
+.contenidoServicios > article > header > p{
   font-size: 70px;
   color: #495F73;
   position: absolute;
@@ -118,9 +118,16 @@
   list-style-type: disc;
 }
 
+.contenidoServicios > article > section > p{
+  text-align: justify;
+}
+
+
 .contenidoServicios > article > section > figure{
   margin: 25px;
 }
+
+
 
 .mapa > img{
   display: block;

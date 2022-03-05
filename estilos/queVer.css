@@ -25,15 +25,15 @@ section > h2{
 
 .contenidoQueVer > p{
   text-align: justify;
-  margin: 0px;
+  margin: 10px;
   font-size: 14px;
 }
 
+/*Tamaño tablets*/
 @media screen and (max-width: 1023px){
   .contenidoQueVer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
 }
