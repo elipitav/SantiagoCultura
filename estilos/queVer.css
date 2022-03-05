@@ -3,19 +3,24 @@
 article{
   padding: 80px;
 }
-section{
+
+.contenidoQueVer{
   display: flex;
 }
-article > h2{
+
+section > h2{
   font-size: 18px;
   padding: 7px;
   display: list-item;
   list-style-type: disc;
 }
-section > figure{
+
+.contenidoQueVer > figure{
   margin: 10px;
 }
-section > p{
+
+.contenidoQueVer > p{
+  text-align: justify;
   margin: 10px;
   font-size: 14px;
 }
