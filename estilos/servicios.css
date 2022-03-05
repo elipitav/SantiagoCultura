@@ -20,7 +20,6 @@
   display: inline-block;
   text-align: center;
   border: #495F73 solid 1px;
-  z-index: -1;
 }
 
 .navServicios > ul > li > a > p{
