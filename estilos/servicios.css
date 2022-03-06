@@ -3,6 +3,7 @@
 .contenidoServicios{
   margin: 0px;
   grid-column: 3/11;
+  width: 100%;
   padding: 30px 0px;
   display: flex;
   flex-direction: column;
