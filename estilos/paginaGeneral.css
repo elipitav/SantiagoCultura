@@ -88,14 +88,9 @@ main{
     text-align: left;
   }
 
-  .cabecera > h1{
+  header > p{
     padding: 40px;
     font-size: 50px;
-  }
-
-  .cabecera > figure{
-     width: 90px;
-     height: 132px;
   }
 
   .submenuPrincipal li a{
@@ -146,13 +141,8 @@ main{
     display: block;
   }
 
-  .cabecera > h1{
+  header > p{
     font-size: 40px;
-  }
-
-  .cabecera > figure > img{
-     width: 100px;
-     height: 145px;
   }
 
   .checkbtn{

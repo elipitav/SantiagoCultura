@@ -8,3 +8,25 @@ article > p{
   padding: 10px 0px;
   text-align: justify;
 }
+
+/*para tabletas*/
+@media screen and (max-width: 1023px){
+  article {
+    padding: 60px;
+  }
+  article > p{
+    padding: 8px 0px;
+    font-size: 12px;
+  }
+}
+
+/*para móviles*/
+@media screen and (max-width: 767px){
+  article {
+    padding: 40px;
+    grid-column: 1/13;
+  }
+  article > p{
+    padding: 5px 0px;
+  }
+}

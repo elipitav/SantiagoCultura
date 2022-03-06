@@ -21,3 +21,36 @@ article > section > figure{
   padding: 8px;
   font-size: 14px;
 }
+
+/*para tabletas*/
+@media screen and (max-width: 1023px){
+
+  article{
+    border: #495F73 2px solid;
+    padding: 30px 60px;
+  }
+  article > section > h3{
+    padding: 12px 3px;
+    font-size: 12px;
+  }
+  article > section > figure{
+    padding: 6px;
+    font-size: 12px;
+  }
+}
+/*para móviles*/
+@media screen and (max-width: 767px){
+  article{
+    grid-column: 1/13;
+    border: #495F73 1px solid;
+    padding: 30px 30px;
+  }
+  article > section > h3{
+    padding: 10px 3px;
+    font-size: 11px;
+  }
+  article > section > figure{
+    padding: 4px;
+    font-size: 11px;
+  }
+}
