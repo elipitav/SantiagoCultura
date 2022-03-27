@@ -22,6 +22,9 @@ button{
   border-radius: 5px;
   font-family: Rockwell;
 }
+.menos{
+  display:none;
+}
 
 article{
   grid-column: 3/11;

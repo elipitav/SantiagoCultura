@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="estilos/principal.css"/>
     <link rel="icon" type="image/jpg" href="imagenes/principal/logo.jpg">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
   </head>
   <body class="contenido">
 
@@ -20,10 +22,13 @@
 
       <nav class="navegacionPrincipal">
 
-        <input type="checkbox" id="check">
+        <button id="botonHamburguesa">
+          <i class="fas fa-bars"></i>
+        </button>
+<!--      <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
-        </label>
+        </label>*/-->
 
         <ul class="menuPrincipal">
           <li id="informacion"> <a href="#informacion"> Información </a>
@@ -196,6 +201,9 @@
         </li>
       </ul>
     </section>
+
+    <script src="scripts/navegacion.js"></script>
+
 
   </body>
 </html>

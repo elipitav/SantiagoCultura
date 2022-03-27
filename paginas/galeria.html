@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Eliseo Pita Vilariño y Cristina López Amado">
     <meta name= "description" content="Galería de imágenes de la ciudad de Santiago de compostela">
     <title> Galeria </title>
     <link rel="stylesheet" href="../estilos/galeria.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
   </head>
-  <body class="contenido">
+  <body>
     <nav class="navegacionPrincipal">
 
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-      </label>
+      <button id="botonHamburguesa">
+        <i class="fas fa-bars"></i>
+      </button>
 
       <ul class="menuPrincipal">
         <div class="inicio">
@@ -67,7 +69,6 @@
 
     <main>
 
-      <aside class="lado1"> </aside>
 
       <article>
         <h2> Catedral de Santiago: </h2>
@@ -81,7 +82,7 @@
           <figure class="imagenPrincipal">
             <img src="../imagenes/galeria/catedral/catedral3.jpg" width=200 height=145>
           </figure>
-          <button>MÁS</button>
+          <button class="mas">MÁS</button>
           <figure class="imagenSecundaria" >
             <img src="../imagenes/galeria/catedral/catedral4.jpg" width=200 height=145>
           </figure>
@@ -91,6 +92,7 @@
           <figure class="imagenSecundaria">
             <img src="../imagenes/galeria/catedral/catedral6.jpg" width=200 height=145>
           </figure>
+          <button class="menos">MENOS</button>
         </section>
         <h2> Camino de Santiago: </h2>
         <section>
@@ -103,7 +105,7 @@
           <figure class="imagenPrincipal">
             <img src="../imagenes/galeria/camino/camino3.jpg" width=200 height=145>
           </figure>
-          <button>MÁS</button>
+          <button class="mas">MÁS</button>
           <figure class="imagenSecundaria">
             <img src="../imagenes/galeria/camino/camino4.jpg" width=200 height=145>
           </figure>
@@ -113,6 +115,7 @@
           <figure class="imagenSecundaria">
             <img src="../imagenes/galeria/camino/camino6.jpg" width=200 height=145>
           </figure>
+          <button class="menos">MENOS</button>
         </section>
         <h2> Parques: </h2>
         <section>
@@ -125,7 +128,7 @@
           <figure class="imagenPrincipal">
             <img src="../imagenes/galeria/parques/parque3.jpg" width=200 height=145>
           </figure>
-          <button>MÁS</button>
+          <button class="mas">MÁS</button>
           <figure class="imagenSecundaria">
             <img src="../imagenes/galeria/parques/parque4.jpg" width=200 height=145>
           </figure>
@@ -135,6 +138,7 @@
           <figure class="imagenSecundaria">
             <img src="../imagenes/galeria/parques/parque6.jpg" width=200 height=145>
           </figure>
+          <button class="menos">MENOS</button>
         </section>
         <h2> Comida: </h2>
         <section>
@@ -147,7 +151,7 @@
           <figure class="imagenPrincipal">
               <img src="../imagenes/galeria/comida/comida3.jpg" width=200 height=145>
           </figure>
-          <button>MÁS</button>
+          <button class="mas">MÁS</button>
           <figure class="imagenSecundaria">
               <img src="../imagenes/galeria/comida/comida4.jpg" width=200 height=145>
           </figure class="imagenSecundaria">
@@ -157,10 +161,13 @@
           <figure class="imagenSecundaria">
               <img src="../imagenes/galeria/comida/comida6.jpg" width=200 height=145>
           </figure class="imagenSecundaria">
+          <button class="menos">MENOS</button>
         </section>
       </article>
 
-      <aside class="lado2"> </aside>
     </main>
+
+    <script src="../scripts/galeria.js"></script>
+    <script src="../scripts/navegacionGeneral.js"></script>
   </body>
 </html>

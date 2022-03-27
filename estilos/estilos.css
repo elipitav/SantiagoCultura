@@ -6,34 +6,46 @@
   box-sizing: border-box;
 }
 
-.contenido{
-  /*width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 218px 77px 600px;*/
+body{
+
   font-family: Arial, Verdana, Geneva, sans-serif;
   background-color: #F2E3D5;
+  display: flex;
+  flex-direction: column;
 }
 
 .navegacionPrincipal{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
+/*
 .checkbtn{
     font-size: 40px;
     color: #495F73;
-    /*color: #F2E3D5;*/
     float: right;
-    /*line-height: 80px;*/
     margin-right: 20px;
     margin-left: 20px;
     cursor: pointer;
     display: none;
 }
+*/
 
-#check{
+button{
     display: none;
+    height: 40px;
+    width: 40px;
+    background-color: #F2E3D5;
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+    margin-bottom: 5px;
+}
+button > i{
+  font-size: 40px;
+  color: #495F73;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 5px;
 }
 
 .menuPrincipal{

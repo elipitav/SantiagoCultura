@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Eliseo Pita Vilariño y Cristina López Amado">
     <meta name= "description" content="Preguntas frecuentes sobre información para turistas
     de la ciudad de Santiago de Compostela." >
     <title> FAQs </title>
     <link rel="stylesheet" href="../estilos/faqs.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
   </head>
 
-  <body class="contenido">
+  <body>
 
     <nav class="navegacionPrincipal">
 
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-      </label>
+      <button id="botonHamburguesa">
+        <i class="fas fa-bars"></i>
+      </button>
 
       <ul class="menuPrincipal">
         <div class="inicio">
@@ -69,36 +71,47 @@
     </header>
 
     <main>
-        <aside class="lado1"> </aside>
 
         <article>
           <section>
-            <h3>¿Qué otras ciudades puedo visitar en los alrededores?</h3>
-            <p>Santiago está conectada con muchas otras ciudades de Galicia. Puede
-              coger un tren y estar en Coruña en 20 minutos o, si lo prefiere, puede
-              ir a Vigo en tren, el cual tiene un trayecto de 50 min. También hay
-              otras muchas ciudades como puede ser Lugo, Pontevedra, Ourense... </p>
+            <div class="pregunta">
+              <h3>¿Qué otras ciudades puedo visitar en los alrededores?</h3>
+          </div>
+            <div class="respuesta">
+              <p>Santiago está conectada con muchas otras ciudades de Galicia. Puede
+                coger un tren y estar en Coruña en 20 minutos o, si lo prefiere, puede
+                ir a Vigo en tren, el cual tiene un trayecto de 50 min. También hay
+                otras muchas ciudades como puede ser Lugo, Pontevedra, Ourense... </p>
+            </div>
           </section>
           <section>
-            <h3>¿Cómo llego a la estación de autobuses?</h3>
-            <p>La estación de autobuses de Santiago se llama Estación Intermodal y
-             se encuentra junto a la estación de tren. Tiene dos entradas. La primera,
-             en Rúa Clara Campoamor y la segunda en Rúa do Hórreo, 75A. Existen numerosos
-             autobuses urbanos con parada en la estación de autobuses desde diferentes
-             puntos de la ciudad </p>
+            <div class="pregunta">
+              <h3>¿Cómo llego a la estación de autobuses?</h3>
+            </div>
+            <div class="respuesta">
+              <p>La estación de autobuses de Santiago se llama Estación Intermodal y
+               se encuentra junto a la estación de tren. Tiene dos entradas. La primera,
+               en Rúa Clara Campoamor y la segunda en Rúa do Hórreo, 75A. Existen numerosos
+               autobuses urbanos con parada en la estación de autobuses desde diferentes
+               puntos de la ciudad </p>
+             </div>
           </section>
           <section>
-            <h3>¿Qué horario tiene la catedral?</h3>
-            <p>La catedral abre todos los días de 7:00 a 21:00. El museo de la Catedral
-            abre de martes a sábado de 10:00 h a 14:00 h y de 16:00 h a 19:00 h y los
-            domingos de 10:00 h a 14:00 h.</p>
+            <div class="pregunta">
+              <h3>¿Qué horario tiene la catedral?</h3>
+            </div>
+            <div class="respuesta">
+              <p>La catedral abre todos los días de 7:00 a 21:00. El museo de la Catedral
+              abre de martes a sábado de 10:00 h a 14:00 h y de 16:00 h a 19:00 h y los
+              domingos de 10:00 h a 14:00 h.</p>
+          </div>
           </section>
         </article>
 
-        <aside class="lado2"> </aside>
     </main>
 
-
+    <script src="../scripts/faqs.js"></script>
+    <script src="../scripts/navegacionGeneral.js"></script>
 
   </body>
 </html>

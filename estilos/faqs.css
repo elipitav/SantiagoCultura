@@ -1,25 +1,35 @@
 @import "paginaGeneral.css";
 
-article{
-  margin: 0px;
-  border: #495F73 4px solid;
+main > article{
   padding: 30px 100px;
-  grid-column: 3/11;
 }
 
-article > section > h3{
+.pregunta > h3{
   background-color: #495F73;
   border: #BFA393 1px solid;
   color: #F2E3D5;
   padding: 15px 5px;
   font-size: 14px;
+  cursor: pointer;
 }
+.respuesta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
 
-article > section > p{
+}
+.respuesta > p{
   background-color: #A3B2BF;
   border: #495F73 1px solid;
-  padding: 8px;
   font-size: 14px;
+  transition: max-height 1.4s ease;
+  padding: 8px;
+
+}
+
+section.active .respuesta{
+  max-height: 300px;
+
 }
 
 /*para tabletas*/
@@ -40,9 +50,8 @@ article > section > p{
 }
 /*para móviles*/
 @media screen and (max-width: 767px){
-  article{
-    grid-column: 1/13;
-    border: #495F73 1px solid;
+  main > article{
+    border: 0px;
     padding: 30px 30px;
   }
   article > section > h3{

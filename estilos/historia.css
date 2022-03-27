@@ -1,9 +1,6 @@
 @import "paginaGeneral.css";
 
-article {
-  padding: 80px;
-  grid-column: 3/11;
-}
+
 article > p{
   padding: 10px 0px;
   text-align: justify;
@@ -21,10 +18,12 @@ article > p{
 }
 
 /*para móviles*/
+
 @media screen and (max-width: 767px){
-  article {
+
+  main > article {
     padding: 40px;
-    grid-column: 1/13;
+    border: 0px;
   }
   article > p{
     padding: 5px 0px;
