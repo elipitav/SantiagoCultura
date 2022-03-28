@@ -8,8 +8,7 @@ botonesMas.forEach(boton => {
     var botonMenos=seccion.querySelector(".menos").style.display="block";
     var imagenes=seccion.querySelectorAll(".imagenSecundaria");
     imagenes.forEach(img => {
-        /*img.style.display="block";*/
-        img.show();
+        img.style.display="inline-block";
     });
 
   }

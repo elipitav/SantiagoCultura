@@ -176,10 +176,7 @@ main > article {
   } */
 
 
-  .imagenPrincipal > img{
-    width: 100%;
-    height: 350px;
-  }
+  
 
   .submenuPrincipal{
     z-index: 1;
@@ -190,7 +187,7 @@ main > article {
     max-width: 100%;
 
   }
-  button{
+  #botonHamburguesa{
     display: block;
   }
 
