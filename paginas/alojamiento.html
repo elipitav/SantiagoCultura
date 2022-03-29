@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Eliseo Pita Vilariño y Cristina López Amado">
+  <meta name= "description" content="Listado de los principales monumentos a visitar en
+  la ciudad de Santiago de Compostela" >
+  <title> Alojamiento </title>
+  <link rel="stylesheet" href="../estilos/alojamiento.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+</head>
+
+<body>
+
+  <nav class="navegacionPrincipal">
+
+    <button id="botonHamburguesa">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <ul class="menuPrincipal">
+      <div class="inicio">
+      <a href="../index.html">
+        <figure> <img src="../imagenes/iconos/iconoCatedral.jpg"> </figure>
+       <p> Inicio </p>
+     </a>
+     </div>
+      <li id="informacion"> <a href="#informacion"> Información </a>
+        <ul class="submenuPrincipal">
+          <li> <a href="historia.html"> Historia </a> </li>
+          <li> <a href="comoLlegar.html"> Cómo llegar </a> </li>
+          <li> <a href="informacionGeneral.html"> Información general </a> </li>
+          <li> <a href="servicios.html"> Servicios </a> </li>
+          <li> <a href="contacto.html"> Contacto </a> </li>
+          <li> <a href="faqs.html"> FAQs </a> </li>
+          <li> <a href="quejasSugerencias.html"> Quejas y sugerencias </a> </li>
+        </ul>
+      </li>
+      <li id="queVer"> <a href="#queVer"> Qué ver </a>
+        <ul class="submenuPrincipal">
+          <li> <a href="monumentos.html"> Monumentos </a> </li>
+          <li> <a href="museosExposiciones.html"> Museos y exposiciones </a> </li>
+          <li> <a href="parquesJardines.html"> Parques y jardines </a> </li>
+        </ul>
+      </li>
+      <li id="queHacer"> <a href="#queHacer"> Qué hacer </a>
+        <ul class="submenuPrincipal">
+          <li> <a href="tours.html"> Tours </a> </li>
+          <li> <a href="gastronomia.html"> Gastronomía </a> </li>
+          <li> <a href="alojamiento.html"> Alojamiento </a> </li>
+          <li> <a href="comercio.html"> Comercio </a> </li>
+          <li> <a href="ocioNocturno.html"> Ocio nocturno </a> </li>
+          <li> <a href="agendaCultural.html"> Agenda cultural </a> </li>
+          <li> <a href="caminoSantiago.html"> Camino de Santiago </a> </li>
+        </ul>
+      </li>
+      <li id="galeria"> <a href="#galeria"> Galería </a>
+        <ul class="submenuPrincipal">
+          <li> <a href="galeria.html"> Galería de imágenes </a> </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+    <header>
+      <figure> <img src="../imagenes/portadas/alojamiento.jpg" width="100%" height="150px"> </figure>
+      <p> ALOJAMIENTO </p>
+    </header>
+    <main>
+
+      <article>
+
+        <section class="filtrado">
+          <label for="comboboxTipo">Tipo:</label>
+          <select name="comboboxTipo" id="comboboxTipo">
+            <option>Hotel</option>
+            <option>Hostal</option>
+            <option>Albergue</option>
+          </select>
+          <label for="comboboxPrecio">Tipo:</label>
+          <select name="comboboxPrecio" id="comboboxPrecio">
+            <option>$</option>
+            <option>$$</option>
+            <option>$$$</option>
+          </select>
+          <button id="botonBuscar">BUSCAR</button>
+        </section>
+        <section class="listaAlojamientos">
+        </section>
+
+      </article>
+    </main>
+    <script src="../scripts/navegacionGeneral.js"></script>
+  </body>
+  <script>
+    document.getElementById("botonBuscar").addEventListener("click",cargarResultados);
+
+    function cargarResultados(){
+      var xhttp = new XMLHttpRequest();
+      var comboboxTipo = document.getElementById("comboboxTipo");
+      var tipo = comboboxTipo.options[comboboxTipo.selectedIndex].text;
+      var comboboxPrecio = document.getElementById("comboboxPrecio");
+      var precio = comboboxPrecio.options[comboboxPrecio.selectedIndex].text;
+      xhttp.onreadystatechange = function(){
+        if(this.readyState==4 && this.status==200){
+          console.log("hola");
+          // var xmlDoc=this.responseXML;
+          // var x = xmlDoc.getElementsByTagName("alojamiento").innerHTML;
+          // for(var i=0; var<x.length; i++){
+          //   var auxTipo = x[i].getElementsByTagName("tipo");
+          //   var tipoAloj = auxTipo[0].textContent;
+          //   var auxPrecio = x[i].getElementsByTagName("precio");
+          //   var precioAloj = auxPrecio[0].textContent;
+          //   var auxtxt = x[i].getElementsByTagName("titulo");
+          //   var txt=auxtxt[0].textContent;
+          //   console.log(txt);
+          // }
+        }
+      };
+      xhttp.open("GET","../datosServidor/alojamiento.xml",true);
+      xhttp.send();
+
+    }
+  </script>
+</html>

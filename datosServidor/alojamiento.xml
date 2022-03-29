@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lista>
+  <alojamiento>
+    <tipo>Hotel</tipo>
+    <precio>$$</precio>
+    <nombre>Hotel NH Collection</nombre>
+    <descripcion>Hotel de 5 estrellas situado a 10 minutos de la catedral.</descripcion>
+    <imagen>nhcollection.jpg</imagen>
+    <estrellas>4</estrellas>
+  </alojamiento>
+  <alojamiento>
+    <tipo>Hotel</tipo>
+    <precio>$$$</precio>
+    <nombre>Parador Reis Católicos</nombre>
+    <descripcion>Parador de 5 estrellas situado en la plaza del Obradoiro.</descripcion>
+    <imagen>reisCatolicos.jpg</imagen>
+    <estrellas>5</estrellas>
+  </alojamiento>
+  <alojamiento>
+    <tipo>Hotel</tipo>
+    <precio>$$</precio>
+    <nombre>Hotel Universal</nombre>
+    <descripcion>Hotel de 2 estrellas situado cerca del casco histórico.</descripcion>
+    <imagen>hotelUniversal.jpg</imagen>
+    <estrellas>3</estrellas>
+  </alojamiento>
+  <alojamiento>
+    <tipo>Hostal</tipo>
+    <precio>$</precio>
+    <nombre>Azabache Hostel</nombre>
+    <descripcion>Hostal situado al lado de la catedral.</descripcion>
+    <imagen>azabacheHostel.jpg</imagen>
+    <estrellas>4</estrellas>
+  </alojamiento>
+  <alojamiento>
+    <tipo>Hostal</tipo>
+    <precio>$$</precio>
+    <nombre>Hostal R. Mexico</nombre>
+    <descripcion>Hostal situado cerca del campus universitario, a 10 minutos a pie de la catedral.</descripcion>
+    <imagen>mexicoHostal.jpg</imagen>
+    <estrellas>3</estrellas>
+  </alojamiento>
+  <alojamiento>
+    <tipo>Albergue</tipo>
+    <precio>$</precio>
+    <nombre>Meiga Backpackers</nombre>
+    <descripcion>Albergue acogedor situado cerca del casco histórico</descripcion>
+    <imagen>meigaBackpackers.jpg</imagen>
+    <estrellas>3</estrellas>
+  </alojamiento>
+  <alojamiento>
+    <tipo>Albergu</tipo>
+    <precio>$</precio>
+    <nombre>Loop INN Albergue</nombre>
+    <descripcion>Albergue ubicado cerca del paque de Bonaval y del Museo do Pobo Galego</descripcion>
+    <imagen>loopInn.jpg</imagen>
+    <estrellas>2</estrellas>
+  </alojamiento>
+</lista>
