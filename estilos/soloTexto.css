@@ -1,0 +1,60 @@
+@import "paginaGeneral.css";
+
+
+article > p{
+  padding: 10px 0px;
+  text-align: justify;
+}
+article > ul > li{
+  padding: 10px 0px;
+  text-align: justify;
+}
+article > ul > li > p{
+  padding: 4px 0px;
+  text-align: justify;
+}
+.imagenEnTexto > img{
+  margin:20px 40px;
+}
+
+
+/*para tabletas*/
+@media screen and (max-width: 1023px){
+  article {
+    padding: 60px;
+  }
+  article > p{
+    padding: 8px 0px;
+    font-size: 12px;
+  }
+  article > ul > li{
+    padding: 8px 0px;
+    text-align: justify;
+  }
+  article > ul > li > p{
+    padding: 3px 0px;
+    text-align: justify;
+  }
+
+}
+
+/*para móviles*/
+
+@media screen and (max-width: 767px){
+
+  main > article {
+    padding: 40px;
+    border: 0px;
+  }
+  article > p{
+    padding: 5px 0px;
+  }
+  article > ul > li{
+    padding: 5px 0px;
+    text-align: justify;
+  }
+  article > ul > li > p{
+    padding: 2px 0px;
+    text-align: justify;
+  }
+}

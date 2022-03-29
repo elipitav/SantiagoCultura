@@ -5,7 +5,7 @@ article{
   grid-column: 3/11;
 }
 
-.contenidoQueVer{
+.contenidoLista{
   display: flex;
 }
 
@@ -20,11 +20,11 @@ section > h2{
   list-style-type: disc;
 }
 
-.contenidoQueVer > figure{
+.contenidoLista > figure{
   margin: 10px;
 }
 
-.contenidoQueVer > p{
+.contenidoLista > p{
   text-align: justify;
   margin: 10px;
   font-size: 14px;
@@ -32,7 +32,7 @@ section > h2{
 
 /*Tamaño tablets*/
 @media screen and (max-width: 1023px){
-  .contenidoQueVer{
+  .contenidoLista{
     flex-direction: column;
     justify-content: center;
     align-items: center;
