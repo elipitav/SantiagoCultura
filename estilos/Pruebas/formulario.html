@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Principal </title>
+  </head>
+  <body>
+    <section>
+      <form action="">
+        <label for="">
+          <span>Nombre</span>
+          <input type="text" id="Nombre" placeholder="Nombre">
+        </label>
+        <label for="">
+          <span>Apellido</span>
+          <input type="text" id="Apellido" placeholder="Apellido">
+        </label>
+        <label for="">
+          <span>Edad</span>
+          <input type="text" id="Edad" placeholder="Edad">
+        </label>
+      </form>
+    </section>
+    <section id="Mostrar">
+      Mostrar
+    </section>
+    <button id="Enviar">Enviar</button>
+
+  <script>
+    document.getElementById("Enviar").addEventListener('click', cargaTexto);
+
+    function cargaTexto(){
+      fetch('datos.json').then(ajaxOK).catch(error);
+    }
+
+    function error(err){
+      console.log('Error: ',err);
+      document.getElementById("Mostrar").style.backgroundColor='green';
+    }
+
+    function ajaxOK(response){
+      response.json().then(muestraTexto);
+    }
+
+    function muestraTexto(jsonObj){
+      let txt='<ul>'
+      for(x in jsonObj.Registros)
+        txt = txt + "<li>" + jsonObj.Registros[x].Nombre + "->"
+          + jsonObj.Registros[x].Apellido + "</li>";
+      txt = txt + "</ul>";
+      document.getElementById("Mostrar").innerHTML=txt;
+    }
+  </script>
+  </body>
+</html>

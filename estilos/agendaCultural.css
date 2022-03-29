@@ -1,0 +1,166 @@
+@import "paginaGeneral.css";
+
+/*main{
+  margin: 0px;
+  border: #495F73 4px solid;
+  background-color:  #F2E3D5;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+.contenedorFormulario{
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:  #F2E3D5;
+  border-left: #495F73 4px solid;
+  border-right: #495F73 4px solid;
+  padding: 50px;
+}
+
+.formulario{
+  border: 1px solid #495F73;
+}
+
+main > article {
+  border-top: #495F73 4px solid;
+  padding: 0px;
+}
+
+article > section{
+  display: flex;
+  flex-direction: column;
+  background-color: #A3B2BE;
+  padding: 25px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.secciones{
+  display: flex;
+  flex-direction: row;
+}
+
+.seccionIzquierda{
+  margin-top: 25px;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.seccionIzquierda > ul{
+  list-style: none;
+}
+
+.seccionDerecha{
+  margin-top: 25px;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.seccionDerecha > a{
+  text-align: right;
+}
+
+button{
+  border-color: #495F73;
+  color: #495F73;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 7px 20px;
+  border: 1px solid #495F73;
+  border-radius: 5px;
+  font-family: Rockwell;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: row;
+  font-family: Rockwell;
+}
+
+/* form{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 67%;
+} */
+
+.contenedorNombre{
+  margin: 30px;
+}
+
+.Categorias{
+  margin: 30px;
+}
+
+.formularioIzquierda{
+  /* display: flex;
+  flex-grow: column; */
+  flex-basis: 40%;
+}
+
+#Nombre{
+  margin-left: 14px;
+}
+
+.formularioCentro{
+  /* display: flex;
+  flex-grow: column; */
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.contenedorDia{
+  margin: 15px;
+}
+
+.contenedorMes{
+  margin: 15px;
+}
+
+.formularioDerecha{
+  /* display: flex;
+  flex-grow: column; */
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+}
+
+select{
+  background-color: white; /*#BFA393;*/
+  border-color: #495F73;/*#734E39;*/
+  height: 30px;
+  color: #495F73;
+  font-family: Rockwell;
+  border-radius: 5px;
+}
+
+#comboBoxCategorias{
+  width: 150px;
+}
+
+#comboBoxDia{
+  width: 50px;
+}
+
+input{
+  border-color: #495F73;
+  color: #495F73;
+  height: 30px;
+  width: 150px;
+}
+
+/*.seccionDerecha > a > button{
+  color: #495F73;
+  text-align:left;*/
+  /*display: inline-block;*/
+  /*font-size: 16px;
+  margin-top: 10px;
+  padding: 7px 20px;
+  border: 1px solid #495F73;
+  border-radius: 5px;
+  font-family: Rockwell;
+}*/

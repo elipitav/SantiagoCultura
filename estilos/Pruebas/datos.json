@@ -1,0 +1,12 @@
+{
+  "Registros":[
+    {"Nombre" : "Alex",
+    "Apellido" : "Pérez"},
+    {"Nombre" : "Pablo",
+    "Apellido" : "González"},
+    {"Nombre" : "Ana",
+    "Apellido" : "Melano"},
+    {"Nombre" : "Pedro",
+    "Apellido" : "Martinez"}
+  ]
+}
