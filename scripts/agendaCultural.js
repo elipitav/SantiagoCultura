@@ -1,7 +1,7 @@
 document.getElementById("Buscar").addEventListener('click', cargaTexto);
 
       function cargaTexto(){
-        fetch('../datosServidor/agendaCultur.json').then(ajaxOK);
+        fetch('../datosServidor/agendaCultural.json').then(ajaxOK);
       }
 
       function ajaxOK(response){
@@ -25,7 +25,7 @@ document.getElementById("Buscar").addEventListener('click', cargaTexto);
           let anho = jsonObj.Registros[x].Anho.valueOf();
           let lugar = jsonObj.Registros[x].Lugar.valueOf();
           let descripcion = jsonObj.Registros[x].Descripcion.valueOf();
-          letº enlace = jsonObj.Registros[x].Enlace.valueOf();
+          let enlace = jsonObj.Registros[x].Enlace.valueOf();
           if(!nombre.includes(nombreSeleccionado)) {
             flag=false;
           }
