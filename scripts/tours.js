@@ -60,6 +60,7 @@ document.getElementById("Buscar").addEventListener('click', cargaTexto);
                     <p> <b> Descripción: </b>`+descripcion+`</p>
                     <p> <b> Horario: </b>`+horario+`</b>
                     <p> <b> Idiomas: </b>`+idiomas+`</p>
+                    <p> <b> Fecha: </b>`+dia+` de `+mes+ ` del `+anho+`</p>
                     <a href="`+enlace+`"> <button> Reservar </button> </a>
                   </div>
             </section>`
