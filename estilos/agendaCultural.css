@@ -231,15 +231,6 @@ button{
     flex-direction: column;
   }
 
-  /* .seccionIzquierda > ul{
-    list-style: none;
-  }
-
-  .seccionIzquierda > ul >li{
-    list-style: none;
-    margin-bottom: 15px;
-  }*/
-
   .seccionDerecha{
     margin-left: 0px;
   }

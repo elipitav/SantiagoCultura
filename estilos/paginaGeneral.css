@@ -67,21 +67,6 @@ main > article {
   margin-right: auto;
   max-width: 70%;
 }
-/*
-.lado1{
-  margin: 0px;
-  grid-column: 1/3;
-  background-color: #BFA393;
-  border-right: #495F73 4px solid;
-}
-
-.lado2{
-  margin: 0px;
-  grid-column: 11/13;
-  background-color: #BFA393;
-  border-left: #495F73 4px solid;
-}
-*/
 
 /*para tabletas*/
 @media screen and (max-width: 1023px){
@@ -130,17 +115,6 @@ main > article {
     position: relative;
   }
 
-/*
-  .menuPrincipal li:hover .submenuPrincipal{
-    display:none;
-  }
-
-  .menuPrincipal li:target .submenuPrincipal{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }*/
-
   .inicio > a{
     text-decoration: none;
     font-size: 16px;
@@ -161,22 +135,6 @@ main > article {
   header > p{
     font-size: 40px;
   }
-
-/*  .checkbtn{
-    display: block;
-  }
-
-   #check:checked ~ .menuPrincipal{
-        display: flex;
-        flex-direction: column;
-  }
-
-  #check:checked ~ .imagenPrincipal{
-        display: none;
-  } */
-
-
-  
 
   .submenuPrincipal{
     z-index: 1;

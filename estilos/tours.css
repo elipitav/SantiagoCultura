@@ -81,7 +81,6 @@ input{
 }
 
 main > article {
-  /*border-top: #495F73 4px solid;*/
   padding: 100px;
 }
 
@@ -89,10 +88,6 @@ article > section{
   display: flex;
   flex-direction: column;
   background-color: #A3B2BE;
-  /*border-bottom: #495F73 4px solid;*/
-  /*padding: 25px;
-  padding-right: 50px;
-  padding-left: 50px;*/
 }
 
 .Titulo{
@@ -108,7 +103,6 @@ article > section{
 }
 
 .seccionIzquierda{
-  /*margin-top: 25px;*/
   flex-basis: 20%;
   display: flex;
   flex-direction: column;
@@ -120,7 +114,6 @@ article > section{
 
 .seccionIzquierda > ul >li{
   list-style: none;
-  /*margin-bottom: 15px;*/
 }
 
 .seccionDerecha{
@@ -185,39 +178,6 @@ button{
     margin: 15px;
     margin-right: auto;
   }
-
-  /*.formularioIzquierda{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-basis: auto;
-    align-items: center;
-  }
-
-  .contenedorNombre{
-    margin: 15px;
-    margin-left: auto;
-  }
-
-  #Nombre{
-    margin-left: 0px;
-  }
-
-  .formularioCentro{
-    display: flex;
-    flex-direction: row;
-    flex-basis: auto;
-    align-items: center;
-  }
-
-  .formularioDerecha{
-    flex-basis:auto;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-  }*/
 
   main > article {
     max-width: 80%;
