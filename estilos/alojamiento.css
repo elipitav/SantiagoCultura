@@ -1,1 +1,160 @@
-@import "paginaGeneral.css";
+ @import "paginaGeneral.css";
+
+
+  article > div {
+   border-bottom: #495F73 4px solid;
+   height: 150px;
+   padding: 40px 40px;
+ }
+ article > div > div{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   border-radius: 5px;
+   border: #495F73 1px solid;
+ }
+ #botonBuscar{
+   padding: 10px 20px;
+   border: #495F73 1px solid;
+   color: #495F73;
+   border-radius: 5px;
+   font-family: Rockwell;
+   cursor:pointer;
+ }
+ #tipo{
+   padding: 20px 0px;
+   font-family: Rockwell;
+ }
+ .combobox{
+   font-size: 15px;
+   text-align: justify;
+   padding: 5px 20px;
+   border: #495F73 1px solid;
+   color: #495F73;
+   border-radius: 5px;
+   margin-left: 5px;
+ }
+ #precio{
+   padding: 20px 0px;
+   font-family: Rockwell;
+ }
+
+article > section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.2fr;
+  border-bottom: 3px solid #495F73;
+  margin:auto;
+  padding: 25px;
+}
+.texto{
+  grid-column: 1/7;
+  grid-row: 1;
+}
+article > section > figure{
+  grid-column: 8/10;
+  grid-row: 1;
+}
+.valoracion{
+  grid-row: 2;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #495F73;
+  height: 80%;
+  width: 100%;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+.valoracion > button{
+  background-color: white;
+  color: white;
+  -webkit-text-stroke: 2px #495F73;
+  font-size: 16px;
+  border: 0px;
+}
+
+#valoracionGeneral{
+  grid-column: 2/4;
+}
+#valoracionUsuario{
+  grid-column: 5/7;
+}
+#botonValorar{
+  grid-row:2;
+  grid-column: 8/9;
+  margin-top: 10px;
+  border: 1px solid #495F73;
+  border-radius: 5px;
+  color: #495F73;
+  font-family: Rockwell;
+  padding: 10px 20px;
+  margin-left: 20px;
+  cursor:pointer;
+
+}
+
+
+.texto > p{
+  padding: 10px;
+}
+.descripcion{
+  font-size: 14px;
+}
+
+main > article{
+  padding: 0px;
+  margin: auto;
+}
+
+/*para tabletas*/
+@media screen and (max-width: 1023px){
+  .valoracion > button{
+    font-size: 14px;
+  }
+}
+
+
+/*para móviles*/
+@media screen and (max-width: 767px){
+  .valoracion > button{
+    font-size: 12px;
+  }
+  .valoracion{
+    height: 60%;
+    padding: 2px;
+  }
+  #botonValorar{
+    height: 70%;
+    padding: 7px;
+  }
+  #botonBuscar{
+    font-size: 12px;
+    padding: 5px 10px;
+
+  }
+  #tipo{
+    font-size: 12px;
+  }
+  #precio{
+    font-size: 12px;
+  }
+  .combobox{
+    font-size: 12px;
+  }
+  article > div > div{
+    padding: 15px;
+  }
+
+  article > div {
+   border-bottom: #495F73 4px solid;
+   height: 150px;
+   padding: 20px 30px;
+ }
+ .descripcion{
+   font-size: 12px;
+ }
+
+}

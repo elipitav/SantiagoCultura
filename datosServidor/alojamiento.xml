@@ -49,11 +49,11 @@
     <estrellas>3</estrellas>
   </alojamiento>
   <alojamiento>
-    <tipo>Albergu</tipo>
+    <tipo>Albergue</tipo>
     <precio>$</precio>
     <nombre>Loop INN Albergue</nombre>
     <descripcion>Albergue ubicado cerca del paque de Bonaval y del Museo do Pobo Galego</descripcion>
-    <imagen>loopInn.jpg</imagen>
+    <imagen>loop.jpg</imagen>
     <estrellas>2</estrellas>
   </alojamiento>
 </lista>

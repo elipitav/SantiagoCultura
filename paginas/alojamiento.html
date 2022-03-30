@@ -71,57 +71,35 @@
     <main>
 
       <article>
+        <div class="filtrado">
+          <div>
+            <div id="tipo">
+              <label for="comboboxTipo">Tipo:</label>
+              <select name="comboboxTipo" id="comboboxTipo" class="combobox">
+                <option></option>
+                <option>Hotel</option>
+                <option>Hostal</option>
+                <option>Albergue</option>
+              </select>
+            </div>
+            <div id="precio">
+              <label for="comboboxPrecio">Precio:</label>
+              <select name="comboboxPrecio" id="comboboxPrecio" class="combobox">
+                <option></option>
+                <option>$</option>
+                <option>$$</option>
+                <option>$$$</option>
+              </select>
+            </div>
+            <button id="botonBuscar">BUSCAR</button>
+          </div>
+        </div>
 
-        <section class="filtrado">
-          <label for="comboboxTipo">Tipo:</label>
-          <select name="comboboxTipo" id="comboboxTipo">
-            <option>Hotel</option>
-            <option>Hostal</option>
-            <option>Albergue</option>
-          </select>
-          <label for="comboboxPrecio">Tipo:</label>
-          <select name="comboboxPrecio" id="comboboxPrecio">
-            <option>$</option>
-            <option>$$</option>
-            <option>$$$</option>
-          </select>
-          <button id="botonBuscar">BUSCAR</button>
-        </section>
-        <section class="listaAlojamientos">
-        </section>
 
       </article>
     </main>
     <script src="../scripts/navegacionGeneral.js"></script>
+    <script src="../scripts/alojamiento.js"></script>
   </body>
-  <script>
-    document.getElementById("botonBuscar").addEventListener("click",cargarResultados);
 
-    function cargarResultados(){
-      var xhttp = new XMLHttpRequest();
-      var comboboxTipo = document.getElementById("comboboxTipo");
-      var tipo = comboboxTipo.options[comboboxTipo.selectedIndex].text;
-      var comboboxPrecio = document.getElementById("comboboxPrecio");
-      var precio = comboboxPrecio.options[comboboxPrecio.selectedIndex].text;
-      xhttp.onreadystatechange = function(){
-        if(this.readyState==4 && this.status==200){
-          console.log("hola");
-          // var xmlDoc=this.responseXML;
-          // var x = xmlDoc.getElementsByTagName("alojamiento").innerHTML;
-          // for(var i=0; var<x.length; i++){
-          //   var auxTipo = x[i].getElementsByTagName("tipo");
-          //   var tipoAloj = auxTipo[0].textContent;
-          //   var auxPrecio = x[i].getElementsByTagName("precio");
-          //   var precioAloj = auxPrecio[0].textContent;
-          //   var auxtxt = x[i].getElementsByTagName("titulo");
-          //   var txt=auxtxt[0].textContent;
-          //   console.log(txt);
-          // }
-        }
-      };
-      xhttp.open("GET","../datosServidor/alojamiento.xml",true);
-      xhttp.send();
-
-    }
-  </script>
 </html>
