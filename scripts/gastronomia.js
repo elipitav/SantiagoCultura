@@ -45,7 +45,7 @@ $(document).ready(function()
              <p><b>`+nombre+`</b></p>
              <p class="descripcion">`+descripcion+`</p>
            </div>
-           <figure><img src="../imagenes/queHacer/gastronomia/`+imagen+`" width=160 height=90> </figure>
+           <figure><img src="../imagenes/queHacer/gastronomia/`+imagen+`" width=100% height=90> </figure>
 
            <div class="valoracion" id="valoracionGeneral">
              <button>

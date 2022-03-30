@@ -119,6 +119,7 @@ main > article{
 
 /*para móviles*/
 @media screen and (max-width: 767px){
+
   .valoracion > button{
     font-size: 12px;
   }
