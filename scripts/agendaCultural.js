@@ -33,7 +33,7 @@ document.getElementById("Buscar").addEventListener('click', cargaTexto);
             flag=false;
           }
           else if(mesSeleccionado){
-            var diaSeleccionado = comboBoxDia.options[comboBoxDia.selectedIndex].value;
+            let diaSeleccionado = comboBoxDia.options[comboBoxDia.selectedIndex].value;
             if(mesSeleccionado!=mes){
               flag=false;
             }
