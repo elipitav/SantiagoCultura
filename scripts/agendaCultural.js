@@ -163,8 +163,8 @@ document.getElementById("comboBoxMes").addEventListener('change', cargarDias);
                 <div class="secciones">
                   <div class="seccionIzquierda">
                     <ul>
-                      <li> Fecha: ` + dia + ` de ` + mes + ` del ` + anho + `</li>
-                      <li> Lugar:` + lugar + `</li>
+                      <li> <b> Fecha </b>: ` + dia + ` de ` + mes + ` del ` + anho + `</li>
+                      <li> <b> Lugar </b>: ` + lugar + `</li>
                     </ul>
                   </div>
                   <div class="seccionDerecha">

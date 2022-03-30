@@ -86,6 +86,7 @@ article > section{
   display: flex;
   flex-direction: column;
   background-color: #A3B2BE;
+  border-bottom: #495F73 4px solid;
   padding: 25px;
   padding-right: 50px;
   padding-left: 50px;
@@ -107,11 +108,18 @@ article > section{
   list-style: none;
 }
 
+.seccionIzquierda > ul >li{
+  list-style: none;
+  margin-bottom: 15px;
+}
+
 .seccionDerecha{
   margin-top: 25px;
+  margin-left: 20px;
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
+  text-align: justify;
 }
 
 .seccionDerecha > a{
@@ -131,6 +139,11 @@ button{
 
 /*para tabletas*/
 @media screen and (max-width: 1023px){
+
+  .contenedorFormulario{
+    width: 80%;
+    max-width: 80%;
+  }
 
   .formulario{
     border: 1px solid #495F73;
@@ -182,6 +195,68 @@ button{
     flex-basis:auto;
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  main > article {
+    max-width: 80%;
+    width: 80%;
+  }
+
+}
+
+/*para móviles*/
+@media screen and (max-width: 767px){
+
+  .contenedorFormulario{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  main > article {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .secciones{
+    flex-direction: column;
+  }
+
+  .seccionIzquierda{
+    margin-top: 25px;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .seccionDerecha{
+    margin-left: 0px;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+
+  .formularioIzquierda{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    align-items: center;
+  }
+
+  .contenedorNombre{
+    margin: 10px;
+  }
+
+  #Nombre{
+    margin-left: 14px;
+  }
+
+  .contenedorCategorias{
+    margin: 10px;
   }
 
 }
