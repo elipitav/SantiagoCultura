@@ -1,0 +1,12 @@
+{
+  "Registros":[
+    {"Dia" : "2",
+    "Mes" : "Junio",
+    "Anho" : "2022",
+    "Descripcion" : "Tour por los tejados de la catedral",
+    "Horario" : "16:00-18:00",
+    "Idiomas" : "Galego, Español",
+    "Imagen" : "../imagenes/queHacer/tours/tejados.jpg",
+    "Enlace" : "https://visitas.catedraldesantiago.es/es-ES/informacion-recinto/4/torre-carraca"}
+  ]
+}

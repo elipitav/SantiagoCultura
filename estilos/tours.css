@@ -15,40 +15,11 @@
   display: flex;
   flex-direction: row;
   font-family: Rockwell;
-}
-
-.contenedorNombre{
-  margin: 30px;
-}
-
-.contenedorCategorias{
-  margin: 30px;
-}
-
-.formularioIzquierda{
-  flex-basis: 50%;
-}
-
-#Nombre{
-  margin-left: 14px;
-}
-
-.formularioCentro{
-  flex-basis: 40%;
-  display: flex;
   align-items: center;
 }
 
-.contenedorDia{
-  margin: 15px;
-}
-
-.contenedorMes{
-  margin: 15px;
-}
-
-.formularioDerecha{
-  flex-basis: 15%;
+.formularioIzquierda{
+  flex-basis: 40%;
   display: flex;
   align-items: center;
 }
@@ -62,12 +33,44 @@ select{
   border-radius: 5px;
 }
 
-#comboBoxCategorias{
-  width: 150px;
+.contenedorDia{
+  margin: 15px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #comboBoxDia{
   width: 50px;
+}
+
+.contenedorMes{
+  margin: 15px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formularioDerecha{
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.contenedorIdiomas{
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#comboBoxIdiomas{
+  width: 150px;
+}
+
+#Buscar{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
 }
 
 input{
@@ -78,28 +81,35 @@ input{
 }
 
 main > article {
-  border-top: #495F73 4px solid;
-  padding: 0px;
+  /*border-top: #495F73 4px solid;*/
+  padding: 100px;
 }
 
 article > section{
   display: flex;
   flex-direction: column;
   background-color: #A3B2BE;
-  border-bottom: #495F73 4px solid;
-  padding: 25px;
+  /*border-bottom: #495F73 4px solid;*/
+  /*padding: 25px;
   padding-right: 50px;
-  padding-left: 50px;
+  padding-left: 50px;*/
+}
+
+.Titulo{
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .secciones{
   display: flex;
   flex-direction: row;
+  border: 1px solid #495F73;
+  margin-bottom: 25px;
 }
 
 .seccionIzquierda{
-  margin-top: 25px;
-  flex-basis: 50%;
+  /*margin-top: 25px;*/
+  flex-basis: 20%;
   display: flex;
   flex-direction: column;
 }
@@ -110,16 +120,23 @@ article > section{
 
 .seccionIzquierda > ul >li{
   list-style: none;
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
 }
 
 .seccionDerecha{
-  margin-top: 25px;
-  margin-left: 20px;
-  flex-basis: 50%;
+  /*margin-top: 25px;
+  margin-left: 20px;*/
+  flex-basis: 80%;
   display: flex;
   flex-direction: column;
-  text-align: justify;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: auto;
+  margin-bottom: 0px;
+}
+
+.seccionDerecha > p{
+  margin-bottom: 6px;
 }
 
 .seccionDerecha > a{
@@ -133,7 +150,6 @@ button{
   margin-top: 10px;
   padding: 7px 15px;
   border: 1px solid #495F73;
-  border-radius: 5px;
   font-family: Rockwell;
 }
 
@@ -152,7 +168,27 @@ button{
     font-family: Rockwell;
   }
 
-  .formularioIzquierda{
+  .contenedorDia{
+    margin-right: 15px;
+    margin-left: auto;
+  }
+
+  .contenedorMes{
+    margin-left: 15px;
+    margin-right: auto;
+  }
+
+  .contenedorIdiomas{
+    margin-right: 15px;
+    margin-left: auto;
+  }
+
+  #Buscar{
+    margin: 15px;
+    margin-right: auto;
+  }
+
+  /*.formularioIzquierda{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -163,11 +199,6 @@ button{
   .contenedorNombre{
     margin: 15px;
     margin-left: auto;
-  }
-
-  .contenedorCategorias{
-    margin: 15px;
-    margin-right: auto;
   }
 
   #Nombre{
@@ -181,16 +212,6 @@ button{
     align-items: center;
   }
 
-  .contenedorDia{
-    margin: 15px;
-    margin-left: auto;
-  }
-
-  .contenedorMes{
-    margin: 15px;
-    margin-right: auto;
-  }
-
   .formularioDerecha{
     flex-basis:auto;
     display: flex;
@@ -198,7 +219,7 @@ button{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-  }
+  }*/
 
   main > article {
     max-width: 80%;
@@ -220,52 +241,23 @@ button{
     width: 100%;
   }
 
+}
+
+@media screen and (max-width: 600px){
+
   .secciones{
     flex-direction: column;
   }
 
   .seccionIzquierda{
-    margin-top: 25px;
     flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* .seccionIzquierda > ul{
-    list-style: none;
-  }
-
-  .seccionIzquierda > ul >li{
-    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
     margin-bottom: 15px;
-  }*/
-
+  }
   .seccionDerecha{
-    margin-left: 0px;
-  }
-
-}
-
-@media screen and (max-width: 600px){
-
-  .formularioIzquierda{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-basis: auto;
-    align-items: center;
-  }
-
-  .contenedorNombre{
-    margin: 10px;
-  }
-
-  #Nombre{
-    margin-left: 14px;
-  }
-
-  .contenedorCategorias{
-    margin: 10px;
+    margin-left: 10px;
   }
 
 }

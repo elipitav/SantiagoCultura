@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Eliseo Pita Vilariño y Cristina López Amado">
+  <meta name= "description" content="Listado con los futuros tours por la ciudad" >
+  <title> Tours </title>
+  <link rel="stylesheet" href="../estilos/tours.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+</head>
+
+<body>
+
+  <nav class="navegacionPrincipal">
+
+    <button id="botonHamburguesa">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <ul class="menuPrincipal">
+
+      <div class="inicio">
+        <a href="../index.html">
+          <figure> <img src="../imagenes/iconos/iconoCatedral.jpg"> </figure>
+          <p> Inicio </p>
+       </a>
+      </div>
+
+      <li id="informacion"> <a href="#informacion"> Información </a>
+        <ul class="submenuPrincipal">
+          <li> <a href="historia.html"> Historia </a> </li>
+          <li> <a href="comoLlegar.html"> Cómo llegar </a> </li>
+          <li> <a href="informacionGeneral.html"> Información general </a> </li>
+          <li> <a href="servicios.html"> Servicios </a> </li>
+          <li> <a href="contacto.html"> Contacto </a> </li>
+          <li> <a href="faqs.html"> FAQs </a> </li>
+          <li> <a href="quejasSugerencias.html"> Quejas y sugerencias </a> </li>
+        </ul>
+      </li>
+
+      <li id="queVer"> <a href="#queVer"> Qué ver </a>
+        <ul class="submenuPrincipal">
+          <li> <a href="monumentos.html"> Monumentos </a> </li>
+          <li> <a href="museosExposiciones.html"> Museos y exposiciones </a> </li>
+          <li> <a href="parquesJardines.html"> Parques y jardines </a> </li>
+        </ul>
+      </li>
+
+      <li id="queHacer"> <a href="#queHacer"> Qué hacer </a>
+        <ul class="submenuPrincipal">
+          <li> <a href="tours.html"> Tours </a> </li>
+          <li> <a href="gastronomia.html"> Gastronomía </a> </li>
+          <li> <a href="alojamiento.html"> Alojamiento </a> </li>
+          <li> <a href="comercio.html"> Comercio </a> </li>
+          <li> <a href="ocioNocturno.html"> Ocio nocturno </a> </li>
+          <li> <a href="agendaCultural.html"> Agenda cultural </a> </li>
+          <li> <a href="caminoSantiago.html"> Camino de Santiago </a> </li>
+        </ul>
+      </li>
+
+      <li id="galeria"> <a href="#galeria"> Galería </a>
+        <ul class="submenuPrincipal">
+          <li> <a href="galeria.html"> Galería de imágenes </a> </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <header>
+    <figure> <img src="../imagenes/portadas/tours.jpg" width="100%" height="150px"> </figure>
+    <p> TOURS </p>
+  </header>
+
+  <main>
+    <div class="contenedorFormulario">
+      <div class="formulario">
+        <div class="formularioIzquierda">
+          <div class="contenedorDia">
+            <label for="comboBoxDia">Día:</label>
+            <select name="comboBoxDia" id="comboBoxDia">
+            </select>
+          </div>
+          <div class="contenedorMes">
+            <label for="comboBoxMes">Mes:</label>
+            <select name="comboBoxMes" id="comboBoxMes">
+              <option></option>
+              <option>Enero</option>
+              <option>Febrero</option>
+              <option>Marzo</option>
+              <option>Abril</option>
+              <option>Mayo</option>
+              <option>Junio</option>
+              <option>Julio</option>
+              <option>Agosto</option>
+              <option>Septiembre</option>
+              <option>Octubre</option>
+              <option>Noviembre</option>
+              <option>Diciembre</option>
+            </select>
+          </div>
+        </div>
+        <div class="formularioDerecha">
+          <div class="contenedorIdiomas">
+            <label for="comboBoxIdiomas class="labelCategorias"">Idioma:</label>
+            <select name="comboBoxIdiomas" id="comboBoxIdiomas">
+              <option></option>
+              <option>Galego</option>
+              <option>Español</option>
+              <option>Francés</option>
+              <option>Inglés</option>
+            </select>
+          </div>
+          <button id="Buscar">Buscar</button>
+        </div>
+      </div>
+    </div>
+
+    <article id="Mostrar">
+    </article>
+
+  </main>
+  <script src="../scripts/navegacionGeneral.js"></script>
+  <script src="../scripts/tours.js"></script>
+  <script src="../scripts/comboBoxFechas.js"></script>
+
+</body>
+</html>
