@@ -1,4 +1,5 @@
 document.getElementById("Buscar").addEventListener('click', cargaTexto);
+document.getElementById("comboBoxMes").addEventListener('change', cargarDias);
 
       function cargarDias(){
         var comboBoxMes = document.getElementById("comboBoxMes");
@@ -107,7 +108,7 @@ document.getElementById("Buscar").addEventListener('click', cargaTexto);
       }
 
       function cargaTexto(){
-        fetch('datos.json').then(ajaxOK);
+        fetch('../datosServidor/agendaCultur.json').then(ajaxOK);
       }
 
       function ajaxOK(response){
@@ -115,15 +116,64 @@ document.getElementById("Buscar").addEventListener('click', cargaTexto);
       }
 
       function muestraTexto(jsonObj){
-        var Nombre = document.getElementById('Nombre').value;
-        let txt='<ul>'
+        var nombreSeleccionado = document.getElementById("Nombre").value;
+        var comboBoxDia = document.getElementById("comboBoxDia");
+        var comboBoxMes = document.getElementById("comboBoxMes");
+        var comboBoxCategorias = document.getElementById("comboBoxCategorias");
+        var mesSeleccionado = comboBoxMes.options[comboBoxMes.selectedIndex].value;
+        var tipoSeleccionado = comboBoxCategorias.options[comboBoxCategorias.selectedIndex].value;
+        let html=''
         for(x in jsonObj.Registros){
-          // console.log(jsonObj.Registros[x].Nombre.valueOf());
-          if(jsonObj.Registros[x].Nombre.valueOf() == Nombre.valueOf()) {
-            txt = txt + "<li>" + jsonObj.Registros[x].Nombre + "->"
-            + jsonObj.Registros[x].Apellido + "</li>";
+          var flag=true;
+          var nombre = jsonObj.Registros[x].Nombre.valueOf();
+          var tipo = jsonObj.Registros[x].Tipo.valueOf();
+          var dia = jsonObj.Registros[x].Dia.valueOf();
+          var mes = jsonObj.Registros[x].Mes.valueOf();
+          var anho = jsonObj.Registros[x].Anho.valueOf();
+          var lugar = jsonObj.Registros[x].Lugar.valueOf();
+          var descripcion = jsonObj.Registros[x].Descripcion.valueOf();
+          var enlace = jsonObj.Registros[x].Enlace.valueOf();
+          console.log("Nombre seleccionado: ", nombreSeleccionado);
+          console.log("Nombre: ", nombre);
+          console.log("Tipo seleccionado: ", tipoSeleccionado);
+          console.log("Tipo: ", tipo);
+          console.log("Mes seleccionado: ", mesSeleccionado);
+          console.log("Mes: ", mes);
+          if(!nombre.includes(nombreSeleccionado)) {
+            flag=false;
+          }
+          else if(tipo != tipoSeleccionado && tipoSeleccionado){
+            flag=false;
+          }
+          else if(mesSeleccionado){
+            var diaSeleccionado = comboBoxDia.options[comboBoxDia.selectedIndex].value;
+            console.log("Dia seleccionado: ", diaSeleccionado);
+            console.log("Dia: ", dia);
+            if(mesSeleccionado!=mes){
+              flag=false;
+            }
+            else if(diaSeleccionado!=dia && diaSeleccionado){
+              flag=false;
+            }
+          }
+          if(flag){
+            html = html +
+            `<section>
+              <h2>` + nombre + `</h2>
+                <div class="secciones">
+                  <div class="seccionIzquierda">
+                    <ul>
+                      <li> Fecha: ` + dia + ` de ` + mes + ` del ` + anho + `</li>
+                      <li> Lugar:` + lugar + `</li>
+                    </ul>
+                  </div>
+                  <div class="seccionDerecha">
+                    <p>` + descripcion + `</p>
+                    <a href="` + enlace +`"> <button> Más información </button> </a>
+                  </div>
+                </div>
+            </section>`
           }
         }
-        txt = txt + "</ul>";
-        document.getElementById("Mostrar").innerHTML=txt;
+        document.getElementById("Mostrar").innerHTML=html;
       }

@@ -1,0 +1,12 @@
+{
+  "Registros":[
+    {"Nombre" : "Orquesta Sinfónica de Galicia",
+    "Tipo" : "Música",
+    "Dia" : "22",
+    "Mes" : "Febrero",
+    "Anho" : "2022",
+    "Lugar" : "Auditorio de Galicia",
+    "Descripcion" : "La famosa orquesta sinfónica de Galicia nos deleitará con uno de sus maravillosos conciertos",
+    "Enlace" : "https://www.sinfonicadegalicia.com/"}
+  ]
+}

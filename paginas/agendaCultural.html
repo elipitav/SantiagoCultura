@@ -70,20 +70,19 @@
   </nav>
 
   <header>
-    <figure> <img src="../imagenes/portadas/museos.jpg" width="100%" height="150px"> </figure>
+    <figure> <img src="../imagenes/portadas/agendaCultural.jpg" width="100%" height="150px"> </figure>
     <p> AGENDA CULTURAL </p>
   </header>
 
   <main>
     <div class="contenedorFormulario">
       <div class="formulario">
-      <!-- <form> -->
         <div class="formularioIzquierda">
           <div class="contenedorNombre">
             <label for="Nombre" class="labelNombre">Nombre:</label>
             <input name="Nombre" type="text" id="Nombre">
           </div>
-          <div class="Categorias">
+          <div class="contenedorCategorias">
             <label for="comboBoxCategorias class="labelCategorias"">Categoría:</label>
             <select name="comboBoxCategorias" id="comboBoxCategorias">
               <option></option>
@@ -101,7 +100,7 @@
           </div>
           <div class="contenedorMes">
             <label for="comboBoxMes">Mes:</label>
-            <select name="comboBoxMes" id="comboBoxMes" onChange=cargarDias()>
+            <select name="comboBoxMes" id="comboBoxMes">
               <option></option>
               <option>Enero</option>
               <option>Febrero</option>
@@ -118,14 +117,13 @@
             </select>
           </div>
         </div>
-        <!-- </form> -->
         <div class="formularioDerecha">
           <button id="Buscar">Buscar</button>
         </div>
       </div>
     </div>
 
-    <article>
+    <article id="Mostrar">
     </article>
 
   </main>

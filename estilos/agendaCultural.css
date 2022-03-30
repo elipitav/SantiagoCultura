@@ -1,14 +1,5 @@
 @import "paginaGeneral.css";
 
-/*main{
-  margin: 0px;
-  border: #495F73 4px solid;
-  background-color:  #F2E3D5;
-  max-width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-}*/
-
 .contenedorFormulario{
   max-width: 70%;
   margin-left: auto;
@@ -16,11 +7,74 @@
   background-color:  #F2E3D5;
   border-left: #495F73 4px solid;
   border-right: #495F73 4px solid;
-  padding: 50px;
+  padding: 35px;
 }
 
 .formulario{
   border: 1px solid #495F73;
+  display: flex;
+  flex-direction: row;
+  font-family: Rockwell;
+}
+
+.contenedorNombre{
+  margin: 30px;
+}
+
+.contenedorCategorias{
+  margin: 30px;
+}
+
+.formularioIzquierda{
+  flex-basis: 50%;
+}
+
+#Nombre{
+  margin-left: 14px;
+}
+
+.formularioCentro{
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.contenedorDia{
+  margin: 15px;
+}
+
+.contenedorMes{
+  margin: 15px;
+}
+
+.formularioDerecha{
+  flex-basis: 15%;
+  display: flex;
+  align-items: center;
+}
+
+select{
+  background-color: white;
+  border-color: #495F73;
+  height: 30px;
+  color: #495F73;
+  font-family: Rockwell;
+  border-radius: 5px;
+}
+
+#comboBoxCategorias{
+  width: 150px;
+}
+
+#comboBoxDia{
+  width: 50px;
+}
+
+input{
+  border-color: #495F73;
+  color: #495F73;
+  height: 30px;
+  width: 150px;
 }
 
 main > article {
@@ -69,98 +123,65 @@ button{
   color: #495F73;
   font-size: 16px;
   margin-top: 10px;
-  padding: 7px 20px;
+  padding: 7px 15px;
   border: 1px solid #495F73;
   border-radius: 5px;
   font-family: Rockwell;
 }
 
-.formulario{
-  display: flex;
-  flex-direction: row;
-  font-family: Rockwell;
+/*para tabletas*/
+@media screen and (max-width: 1023px){
+
+  .formulario{
+    border: 1px solid #495F73;
+    display: flex;
+    flex-direction: column;
+    font-family: Rockwell;
+  }
+
+  .formularioIzquierda{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    align-items: center;
+  }
+
+  .contenedorNombre{
+    margin: 15px;
+    margin-left: auto;
+  }
+
+  .contenedorCategorias{
+    margin: 15px;
+    margin-right: auto;
+  }
+
+  #Nombre{
+    margin-left: 0px;
+  }
+
+  .formularioCentro{
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    align-items: center;
+  }
+
+  .contenedorDia{
+    margin: 15px;
+    margin-left: auto;
+  }
+
+  .contenedorMes{
+    margin: 15px;
+    margin-right: auto;
+  }
+
+  .formularioDerecha{
+    flex-basis:auto;
+    display: flex;
+    align-items: center;
+  }
+
 }
-
-/* form{
-  display: flex;
-  flex-direction: row;
-  flex-basis: 67%;
-} */
-
-.contenedorNombre{
-  margin: 30px;
-}
-
-.Categorias{
-  margin: 30px;
-}
-
-.formularioIzquierda{
-  /* display: flex;
-  flex-grow: column; */
-  flex-basis: 40%;
-}
-
-#Nombre{
-  margin-left: 14px;
-}
-
-.formularioCentro{
-  /* display: flex;
-  flex-grow: column; */
-  flex-basis: 40%;
-  display: flex;
-  align-items: center;
-}
-
-.contenedorDia{
-  margin: 15px;
-}
-
-.contenedorMes{
-  margin: 15px;
-}
-
-.formularioDerecha{
-  /* display: flex;
-  flex-grow: column; */
-  flex-basis: 20%;
-  display: flex;
-  align-items: center;
-}
-
-select{
-  background-color: white; /*#BFA393;*/
-  border-color: #495F73;/*#734E39;*/
-  height: 30px;
-  color: #495F73;
-  font-family: Rockwell;
-  border-radius: 5px;
-}
-
-#comboBoxCategorias{
-  width: 150px;
-}
-
-#comboBoxDia{
-  width: 50px;
-}
-
-input{
-  border-color: #495F73;
-  color: #495F73;
-  height: 30px;
-  width: 150px;
-}
-
-/*.seccionDerecha > a > button{
-  color: #495F73;
-  text-align:left;*/
-  /*display: inline-block;*/
-  /*font-size: 16px;
-  margin-top: 10px;
-  padding: 7px 20px;
-  border: 1px solid #495F73;
-  border-radius: 5px;
-  font-family: Rockwell;
-}*/
