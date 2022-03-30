@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lista>
+  <alojamiento>
+    <tipo>Restaurante</tipo>
+    <precio>$</precio>
+    <nombre>La Tita</nombre>
+    <descripcion>Restaurante que ofrece las mejores tortillas de patata de la ciudad. También podrás
+    disfrutar de sus variadas raciones: croquetas, raxo, chipirones...</descripcion>
+    <imagen>latita.jpg</imagen>
+    <estrellas>5</estrellas>
+  </alojamiento>
+  <alojamiento>
+    <tipo>Restaurante</tipo>
+    <precio>$$</precio>
+    <nombre>Mesón 42</nombre>
+    <descripcion>Ubicado en el corazón de la ciudad, este es uno de los restaurantes donde comer en Santiago
+      de Compostela más recomendado, especialmente si quieres disfrutar de buen producto, cocina de calidad
+      y una atención muy profesional pero familiar</descripcion>
+    <imagen>meson42.jpg</imagen>
+    <estrellas>5</estrellas>
+  </alojamiento>
+  <alojamiento>
+    <tipo>Restaurante</tipo>
+    <precio>$$</precio>
+    <nombre>A Noiesa</nombre>
+    <descripcion>Situado en el centro histórico de la ciudad, este restaurante ofrece platos elaborados
+      con productos de primera calidad, con un toque de vanguardia que los hace únicos.</descripcion>
+    <imagen>noiesa.jpg</imagen>
+    <estrellas>4</estrellas>
+  </alojamiento>
+  <alojamiento>
+    <tipo>Restaurante</tipo>
+    <precio>$$$</precio>
+    <nombre>Auga e Sal</nombre>
+    <descripcion>Restaurante que cuenta con una estrella Michelin, ofrece un menú delicioso y de primera calidad.</descripcion>
+    <imagen>augaSal.jpg</imagen>
+    <estrellas>4</estrellas>
+  </alojamiento>
+  <alojamiento>
+    <tipo>Bar</tipo>
+    <precio>$$</precio>
+    <nombre>Riquela</nombre>
+    <descripcion>Ubicado en el centro histórico de la ciudad, perfecto para picar algo, tomarse unas cervezas
+       o unas copas después de cenar</descripcion>
+    <imagen>riquela.jpg</imagen>
+    <estrellas>3</estrellas>
+  </alojamiento>
+  <alojamiento>
+    <tipo>Bar</tipo>
+    <precio>$</precio>
+    <nombre>Tío Pepe</nombre>
+    <descripcion>Ubicado en la zona nueva de la ciudad, este bar ofrece las mejores tapas de Santiago. Con cada
+    consumición podrás disfrutar de una enorme tapa, que se va cambiando cada día: sándwiches, tortilla, hamburguesa,
+    huevos fritos con patatas...)</descripcion>
+    <imagen>tioPepe.jpg</imagen>
+    <estrellas>5</estrellas>
+  </alojamiento>
+  <alojamiento>
+    <tipo>Bar</tipo>
+    <precio>$$</precio>
+    <nombre>Casa das Crechas</nombre>
+    <descripcion>Uno de los locales más emblemáticos de Compostela, es famoso por su vinculación con la música
+      y el panorama cultural tradicional y folk de Galicia. Ofrecen música en directo todas las semanas y
+      los miércoles son noche de foliada.</descripcion>
+    <imagen>crechas.jpg</imagen>
+    <estrellas>4</estrellas>
+  </alojamiento>
+</lista>
